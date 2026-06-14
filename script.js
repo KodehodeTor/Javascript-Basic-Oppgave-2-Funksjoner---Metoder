@@ -267,7 +267,7 @@ Eksempel 4: (["En", "To", "Tre"], "To") --> ["En", "Tre"]
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 7 her
+// no thank you :D
 
 /******************************************************************************
 8.
@@ -295,4 +295,4 @@ Returner "😎Kun primitive verdier😎".
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 8 her
+// forstod så vidt opp. 1-6 så dette sier jeg nei takk til i skrivende stund:)
