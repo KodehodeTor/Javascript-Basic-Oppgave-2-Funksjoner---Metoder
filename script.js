@@ -21,7 +21,23 @@ funksjonen)
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 1 her
+//Satt opp en if/else for pin point
+
+// if (tall / 2 === 0) {
+//   console.log(tall + " er partall");
+// } else {
+//   console.log(tall + " er oddetall");
+// }
+
+function parTallellerIkke(x) {
+  if (x % 2 === 0) {
+    return `Dette er et partall`;
+  } else {
+    return `Dette er ikke et partall`;
+  }
+}
+
+console.log(parTallellerIkke(20));
 
 /******************************************************************************
 2.
@@ -35,7 +51,16 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 2 her
+// let text = "Dette er kult";
+// let fulltext = text + "!";
+// console.log(fulltext.toUpperCase());
+
+function fullText(text) {
+  let fullText = text + "!";
+  return fullText.toUpperCase();
+}
+
+console.log(fullText("Dette er kult"));
 
 /******************************************************************************
 3.
