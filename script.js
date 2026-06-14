@@ -83,8 +83,32 @@ Funksjonen skal returnere:
 Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 
 ******************************************************************************/
+// Dette funker ikke "-" er minus !
+// let tidsreferat = (time, name) => {
+//   if (time >= 0 - 5) {
+//     return `God natt ${name}`;
+//   } else if (time >= 6 - 10) {
+//     return `God morgen ${name}`;
+//   }
+// };
 
-// Skriv koden for oppgave 3 her
+//console.log(tidsreferat(7, "Tor"));
+
+let tidsreferat = (time, name) => {
+  if (time >= 0 && time <= 5) {
+    return `God natt ${name}`;
+  } else if (time >= 6 && time <= 11) {
+    return `God morgen ${name}`;
+  } else if (time >= 12 && time <= 17) {
+    return `God dag ${name}`;
+  } else if (time >= 18 && time <= 23) {
+    return `God kveld ${name}`;
+  } else {
+    return "Ugyldig tid";
+  }
+};
+
+console.log(tidsreferat(11, "Tor"));
 
 /******************************************************************************
 4.
