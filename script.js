@@ -127,6 +127,31 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 
 // Skriv koden for oppgave 4 her
 
+// arrayOne.pop();
+// arrayOne.shift();
+
+// console.log(arrayOne);
+
+const arrayOne = ["Rød", "Grønn", "Blå", "Gul"];
+
+function arrayOneFixed(arrayOne) {
+  arrayOne.pop();
+  arrayOne.shift();
+  return arrayOne;
+}
+
+console.log(arrayOneFixed(arrayOne));
+
+const arrayTwo = ["En", "To", "Tre", "Fire", "Fem", "Seks"];
+
+function arrayTwoFixed(arrayTwo) {
+  arrayTwo.pop();
+  arrayTwo.shift();
+  return arrayTwo;
+}
+
+console.log(arrayTwoFixed(arrayTwo));
+
 /******************************************************************************
 5.
 
@@ -147,7 +172,11 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 ******************************************************************************/
 
 // Skriv koden for oppgave 5 her
+// "  Javascript er vanskelig   "
+// text.trim()
+// text.replace("vanskelig", "gøy"
 
+)
 /******************************************************************************
 6.
 
