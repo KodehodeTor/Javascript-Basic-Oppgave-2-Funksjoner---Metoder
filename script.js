@@ -173,10 +173,22 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 
 // Skriv koden for oppgave 5 her
 // "  Javascript er vanskelig   "
-// text.trim()
-// text.replace("vanskelig", "gøy"
+// text.trim();
+// text.replace("vanskelig", "gøy");
 
-)
+//console.log(exampleOne.replace("vanskelig", "gøy"));
+//Jeg forstår ikke hvorfor dette ikke fungerer? v
+
+const exampleOne = "  Javascript er vanskelig   ";
+
+function exampleOneFixed(exampleOne) {
+  exampleOne.replace("vanskelig", "gøy");
+  exampleOne.trim();
+  return exampleOne;
+}
+
+console.log(exampleOneFixed(exampleOne));
+
 /******************************************************************************
 6.
 
@@ -200,7 +212,20 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 6 her
+// items.shift()
+// items.splice(3, 1, "Linjal")
+// items.splice(1, 2 "Markeringspenn")
+// items.join(" ")
+
+function itemsToBeFixed(items) {
+  items.shift();
+  items.splice(2, 1, "Linjal");
+  items.splice(0, 2, "Markeringspenn");
+  items.join(" ");
+  return items;
+}
+
+console.log(itemsToBeFixed(items));
 
 /******************************************************************************
 7.
