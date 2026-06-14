@@ -177,17 +177,32 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 // text.replace("vanskelig", "gøy");
 
 //console.log(exampleOne.replace("vanskelig", "gøy"));
-//Jeg forstår ikke hvorfor dette ikke fungerer? v
+//Fikk svaret fra oppgave 6 :D ("let result" gjør det jo mulig)
 
 const exampleOne = "  Javascript er vanskelig   ";
+const exampleTwo = " Det er vanskelig å bruke metoder ";
+const exampleThree = "   vanskelig        ";
 
 function exampleOneFixed(exampleOne) {
-  exampleOne.replace("vanskelig", "gøy");
-  exampleOne.trim();
-  return exampleOne;
+  let result = exampleOne.replace("vanskelig", "gøy").trim();
+  return result;
 }
 
 console.log(exampleOneFixed(exampleOne));
+
+function exampleTwoFixed(exampleTwo) {
+  let result = exampleTwo.replace("vanskelig", "gøy");
+  return result;
+}
+
+console.log(exampleTwoFixed(exampleTwo));
+
+function exampleThreeFixed(exampleThree) {
+  let result = exampleThree.replace("vanskelig", "gøy").trim();
+  return result;
+}
+
+console.log(exampleThreeFixed(exampleThree));
 
 /******************************************************************************
 6.
@@ -221,8 +236,9 @@ function itemsToBeFixed(items) {
   items.shift();
   items.splice(2, 1, "Linjal");
   items.splice(0, 2, "Markeringspenn");
-  items.join(" ");
-  return items;
+
+  let result = items.join(" | ");
+  return result;
 }
 
 console.log(itemsToBeFixed(items));
